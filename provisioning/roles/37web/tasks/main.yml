@@ -1,0 +1,12 @@
+---
+- name: 37web | clone git
+  git: repo=https://github.com/Btc4All/37coins.git accept_hostkey=yes dest={{src_root}}
+
+- name: 37web | fetch dependencies
+  command: chdir={{src_root}}/webui/ sudo npm install
+
+- name: 37web | fetch bower components
+  command: chdir={{src_root}}/webui/ bower install
+
+- name: 37web | run server ...
+  command: chdir={{src_root}}/webui/ grunt

@@ -1,0 +1,12 @@
+---
+- hosts: all
+  user: vagrant
+
+  roles:
+    - common
+    - ruby
+    - nodejs
+    - yo
+    - express
+    - nginx
+    - 37web

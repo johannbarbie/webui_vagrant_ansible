@@ -1,0 +1,10 @@
+---
+- name: Express | Install Express
+  sudo: yes
+  npm: name=express global=yes
+  tags: express
+
+- name: Ruby | Install compass gem
+  command: gem install compass
+  sudo: yes
+  tags: ruby

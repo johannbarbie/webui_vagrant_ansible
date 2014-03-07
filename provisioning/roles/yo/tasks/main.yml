@@ -1,0 +1,10 @@
+---
+- name: Yeoman | Install Yeoman
+  sudo: yes
+  npm: name=yo global=yes
+  tags: yeoman
+
+- name: Yeoman | Install Backbone.js generator
+  sudo: yes
+  npm: name=generator-backbone global=yes
+  tags: yeoman
