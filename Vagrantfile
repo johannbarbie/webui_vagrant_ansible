@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :private_network, ip: "192.168.111.222"
 
   #syncs entire project directory to ~/application on target machine
-  config.vm.synced_folder "src/", "/home/vagrant/src"
+  config.vm.synced_folder "src/", "/home/vagrant/src", :create => "true"
 
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--memory", "1024"]
