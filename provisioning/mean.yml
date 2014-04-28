@@ -1,12 +1,15 @@
 ---
 - hosts: all
   user: vagrant
-
+  vars:
+    phantomjs_version: "1.9.2"
+    phantomjs_url: "https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2"
   roles:
     - common
     - ruby
     - nodejs
     - yo
+    - phantomjs
     - express
     - nginx
     - 37web

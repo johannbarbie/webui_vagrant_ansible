@@ -17,14 +17,16 @@ Running
 Running and provisioning can be handled nicely.
 
 
-```
-vagrant up
-```
-A new host key might need to be approved for ssh by tying 'yes'.
-It may take up to 15 minutes to complete. 
 
+```
+vagrant up  //A new host key might need to be approved for ssh by tying 'yes'.
+		    //It may take up to 15 minutes to complete. 
+vagrant ssh
+cd src/webui
+grunt
+```
 
-Once you see "37web | 37web | run server ...", access the page on your host at:
+Access the page on your host at:
 
 ```
 http://192.168.111.222:9000/
@@ -42,11 +44,10 @@ vagrant halt
 
 If there are problems:
 ```
-vagrant halt
-vagrant update
 vagrant provision
-vagrant up
 ```
+
+If you receive error 
 
 Voila! You have a development enviroment with the latest and greatest Node.js, and Yeoman.
 

@@ -7,6 +7,3 @@
 
 - name: 37web | fetch bower components
   command: chdir={{src_root}}/webui/ bower install
-
-- name: 37web | run server ...
-  command: chdir={{src_root}}/webui/ grunt
