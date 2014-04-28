@@ -10,6 +10,7 @@ Installation
 1. Install [Vagrant 1.3.5](http://downloads.vagrantup.com/)
 2. Install [VirtualBox 4.3](https://www.virtualbox.org/wiki/Downloads)
 3. Install [Ansible](http://www.ansibleworks.com/docs/intro_installation.html)
+4. Install [git](https://help.github.com/articles/set-up-git)
 
 Running
 -------
