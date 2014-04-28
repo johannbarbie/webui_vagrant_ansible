@@ -39,6 +39,14 @@ ctrl+C
 vagrant halt
 ```
 
+If there are problems:
+```
+vagrant halt
+vagrant update
+vagrant provision
+vagrant up
+```
+
 Voila! You have a development enviroment with the latest and greatest Node.js, and Yeoman.
 
 Ansible
